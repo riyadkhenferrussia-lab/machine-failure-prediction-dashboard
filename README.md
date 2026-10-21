@@ -157,14 +157,14 @@ Done in the build environment (Linux, Python 3.13.16, scikit-learn 1.9.1, pandas
 After `pip install -r requirements-dev.txt`, `pytest` also runs the `AppTest` tests. The notebook's
 stored outputs come from executing its cells in order with plain Python; it has not been opened in Jupyter.
 
-## Deploying to Streamlit Community Cloud (prepared, not deployed)
+## Live app
 
-The repository is laid out for Community Cloud: `app.py` at the root, `requirements.txt`, the model and
-reports committed (about 4 MB in total), and no secrets. To deploy it: push the repository to your GitHub
-account, sign in at share.streamlit.io, choose **Create app**, select the repository and `app.py`, and pick
-Python 3.11 or newer in *Advanced settings*. Then check that the scikit-learn version installed there can
-load the committed model. If it cannot, the app retrains a quick model on first start, or you can pin
-the versions from `requirements-lock.txt`.
+The dashboard is deployed on Streamlit Community Cloud:
+**https://machine-failure-prediction-ai4i.streamlit.app**
+
+It runs the committed model and reports as they are. The app started on Python 3.13 with the scikit-learn
+version pinned in `requirements.txt`; if a future platform update changes that, the app retrains a quick
+model on start (see *How it works*). Screenshots of the running app are in `screenshots/` once added.
 
 ## Limitations
 
