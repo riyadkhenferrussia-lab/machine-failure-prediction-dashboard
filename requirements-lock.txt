@@ -1,0 +1,11 @@
+# Exact versions used to train the committed model and run the test suite (Python 3.13.16, Linux).
+# The committed models/failure_model.joblib was saved with scikit-learn 1.9.1. With another
+# scikit-learn version the dashboard detects the mismatch and retrains a quick model on start;
+# run `python -m src.train` for the full model. Streamlit is not pinned: it was not installable
+# in the build environment, so no Streamlit version has been tested.
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
+joblib==1.6.0
+pytest==9.1.1

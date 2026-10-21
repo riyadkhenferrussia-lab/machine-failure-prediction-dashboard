@@ -1,0 +1,5 @@
+model_key,model,features,cv_pr_auc_mean,cv_pr_auc_std,threshold,test_pr_auc,test_roc_auc,test_precision,test_recall,test_f1,test_f2,test_mcc,test_balanced_accuracy,test_accuracy,tp,fp,fn,tn
+baseline_majority,Baseline: majority class,raw,0.033875,0.00025,0.5,0.034,0.5,0,0,0,0,0,0.5,0.966,0,0,68,1932
+logreg_raw,Logistic regression (raw features),raw,0.442133,0.0678701,0.773839,0.379759,0.906581,0.327869,0.588235,0.421053,0.507614,0.413293,0.772896,0.945,40,82,28,1850
+rf_raw,Random forest (raw features),raw,0.812167,0.0353062,0.3275,0.837421,0.964274,0.739726,0.794118,0.765957,0.782609,0.757929,0.892142,0.9835,54,19,14,1913
+rf_engineered,Random forest (raw + engineered features),raw + engineered,0.90173,0.0245181,0.34875,0.890656,0.98032,0.949153,0.823529,0.88189,0.845921,0.880397,0.910988,0.9925,56,3,12,1929

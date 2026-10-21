@@ -1,0 +1,4 @@
+risk_level,machines,share_of_machines,recorded_failures,failure_rate,share_of_all_failures
+High,60,0.03,57,0.95,0.8382352941176471
+Elevated,294,0.147,9,0.030612244897959183,0.1323529411764706
+Low,1646,0.823,2,0.001215066828675577,0.029411764705882353

@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "n_errors": 0,
+  "n_warnings": 2,
+  "issues": [
+    {
+      "level": "warning",
+      "code": "failure_without_mode",
+      "message": "9 rows have Machine failure = 1 but no failure-mode flag set"
+    },
+    {
+      "level": "warning",
+      "code": "mode_without_failure",
+      "message": "18 rows have a failure-mode flag set but Machine failure = 0 (18 of them flagged RNF). Labels are kept exactly as published."
+    }
+  ],
+  "stats": {
+    "n_rows": 10000,
+    "n_columns": 14,
+    "n_failures": 339,
+    "failure_rate": 0.0339,
+    "type_counts": {
+      "L": 6000,
+      "M": 2997,
+      "H": 1003
+    },
+    "failure_mode_counts": {
+      "twf": 46,
+      "hdf": 115,
+      "pwf": 95,
+      "osf": 98,
+      "rnf": 19
+    },
+    "label_inconsistencies": {
+      "failure_without_mode_flag": 9,
+      "mode_flag_without_failure": 18,
+      "rnf_flag_without_failure": 18
+    },
+    "documented_rule_agreement": {
+      "pwf": 1.0,
+      "hdf": 1.0,
+      "osf": 1.0
+    },
+    "ranges": {
+      "air_temp_k": {
+        "min": 295.3,
+        "max": 304.5,
+        "mean": 300.00493,
+        "std": 2.0002586829157516
+      },
+      "process_temp_k": {
+        "min": 305.7,
+        "max": 313.8,
+        "mean": 310.00555999999995,
+        "std": 1.4837342191657208
+      },
+      "rotational_speed_rpm": {
+        "min": 1168.0,
+        "max": 2886.0,
+        "mean": 1538.7761,
+        "std": 179.2840959134266
+      },
+      "torque_nm": {
+        "min": 3.8,
+        "max": 76.6,
+        "mean": 39.986909999999995,
+        "std": 9.968933725121337
+      },
+      "tool_wear_min": {
+        "min": 0.0,
+        "max": 253.0,
+        "mean": 107.951,
+        "std": 63.65414663663636
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+data,rules,is_default,risk_level,machines,share_of_machines,recorded_failures,failure_rate,share_of_all_failures
+"training split, out-of-fold scores","Wide margins: 10% everywhere, tool-wear watch from 180 min",False,High,248,0.031,231,0.9314516129032258,0.8523985239852399
+"training split, out-of-fold scores","Wide margins: 10% everywhere, tool-wear watch from 180 min",False,Elevated,2621,0.327625,35,0.013353681800839375,0.12915129151291513
+"training split, out-of-fold scores","Wide margins: 10% everywhere, tool-wear watch from 180 min",False,Low,5131,0.641375,5,0.0009744689144416293,0.01845018450184502
+"training split, out-of-fold scores",Tool-wear watch from the 200 min window start,False,High,248,0.031,231,0.9314516129032258,0.8523985239852399
+"training split, out-of-fold scores",Tool-wear watch from the 200 min window start,False,Elevated,2051,0.256375,35,0.017064846416382253,0.12915129151291513
+"training split, out-of-fold scores",Tool-wear watch from the 200 min window start,False,Low,5701,0.712625,5,0.0008770391159445711,0.01845018450184502
+"training split, out-of-fold scores",Heat-dissipation margin 5%,True,High,248,0.031,231,0.9314516129032258,0.8523985239852399
+"training split, out-of-fold scores",Heat-dissipation margin 5%,True,Elevated,1171,0.146375,35,0.029888983774551667,0.12915129151291513
+"training split, out-of-fold scores",Heat-dissipation margin 5%,True,Low,6581,0.822625,5,0.000759762953958365,0.01845018450184502
+"training split, out-of-fold scores",No heat-dissipation watch,False,High,248,0.031,231,0.9314516129032258,0.8523985239852399
+"training split, out-of-fold scores",No heat-dissipation watch,False,Elevated,895,0.111875,33,0.03687150837988827,0.12177121771217712
+"training split, out-of-fold scores",No heat-dissipation watch,False,Low,6857,0.857125,7,0.0010208546011375237,0.025830258302583026

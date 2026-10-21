@@ -1,0 +1,155 @@
+{
+  "n_rows": 10000,
+  "n_failures": 339,
+  "failure_rate": 0.0339,
+  "failure_rate_by_type": {
+    "L": {
+      "rate": 0.03916666666666667,
+      "failures": 235,
+      "records": 6000
+    },
+    "M": {
+      "rate": 0.02769436102769436,
+      "failures": 83,
+      "records": 2997
+    },
+    "H": {
+      "rate": 0.020937188434695914,
+      "failures": 21,
+      "records": 1003
+    }
+  },
+  "failure_rate_by_tool_wear_bin": {
+    "0-99 min": {
+      "rate": 0.022294372294372294,
+      "failures": 103,
+      "records": 4620
+    },
+    "100-149 min": {
+      "rate": 0.022707423580786028,
+      "failures": 52,
+      "records": 2290
+    },
+    "150-179 min": {
+      "rate": 0.021167883211678833,
+      "failures": 29,
+      "records": 1370
+    },
+    "180-199 min": {
+      "rate": 0.03482045701849837,
+      "failures": 32,
+      "records": 919
+    },
+    "200-253 min": {
+      "rate": 0.15355805243445692,
+      "failures": 123,
+      "records": 801
+    }
+  },
+  "feature_means_by_outcome": {
+    "air_temp_k": {
+      "no_failure": 299.9739985508746,
+      "failure": 300.88643067846607
+    },
+    "process_temp_k": {
+      "no_failure": 309.99556981678916,
+      "failure": 310.2902654867257
+    },
+    "rotational_speed_rpm": {
+      "no_failure": 1540.2600144912535,
+      "failure": 1496.486725663717
+    },
+    "torque_nm": {
+      "no_failure": 39.62965531518476,
+      "failure": 50.16814159292036
+    },
+    "tool_wear_min": {
+      "no_failure": 106.69371700652107,
+      "failure": 143.78171091445427
+    },
+    "temp_diff_k": {
+      "no_failure": 10.0215712659145,
+      "failure": 9.403834808259585
+    },
+    "power_w": {
+      "no_failure": 6244.547534104533,
+      "failure": 7282.81948539945
+    },
+    "strain_min_nm": {
+      "no_failure": 4213.842707794225,
+      "failure": 7187.938348082596
+    }
+  },
+  "correlation_with_failure": {
+    "air_temp_k": 0.08255568978322685,
+    "process_temp_k": 0.03594597332975212,
+    "rotational_speed_rpm": -0.044187559734375326,
+    "torque_nm": 0.1913207750594941,
+    "tool_wear_min": 0.1054482189195948,
+    "temp_diff_k": -0.11167631166572639,
+    "power_w": 0.17603907812460765,
+    "strain_min_nm": 0.1904268334129701
+  },
+  "documented_rule_agreement": {
+    "pwf": 1.0,
+    "hdf": 1.0,
+    "osf": 1.0
+  },
+  "label_inconsistencies": {
+    "failure_without_mode_flag": 9,
+    "mode_flag_without_failure": 18,
+    "rnf_flag_without_failure": 18
+  },
+  "describe": {
+    "air_temp_k": {
+      "count": 10000.0,
+      "mean": 300.0049,
+      "std": 2.0003,
+      "min": 295.3,
+      "25%": 298.3,
+      "50%": 300.1,
+      "75%": 301.5,
+      "max": 304.5
+    },
+    "process_temp_k": {
+      "count": 10000.0,
+      "mean": 310.0056,
+      "std": 1.4837,
+      "min": 305.7,
+      "25%": 308.8,
+      "50%": 310.1,
+      "75%": 311.1,
+      "max": 313.8
+    },
+    "rotational_speed_rpm": {
+      "count": 10000.0,
+      "mean": 1538.7761,
+      "std": 179.2841,
+      "min": 1168.0,
+      "25%": 1423.0,
+      "50%": 1503.0,
+      "75%": 1612.0,
+      "max": 2886.0
+    },
+    "torque_nm": {
+      "count": 10000.0,
+      "mean": 39.9869,
+      "std": 9.9689,
+      "min": 3.8,
+      "25%": 33.2,
+      "50%": 40.1,
+      "75%": 46.8,
+      "max": 76.6
+    },
+    "tool_wear_min": {
+      "count": 10000.0,
+      "mean": 107.951,
+      "std": 63.6541,
+      "min": 0.0,
+      "25%": 53.0,
+      "50%": 108.0,
+      "75%": 162.0,
+      "max": 253.0
+    }
+  }
+}

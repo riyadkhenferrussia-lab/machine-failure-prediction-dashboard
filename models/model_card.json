@@ -1,0 +1,148 @@
+{
+  "model": "Random forest (raw + engineered features)",
+  "model_key": "rf_engineered",
+  "hyperparameters": {
+    "n_estimators": 400,
+    "min_samples_leaf": 1,
+    "max_features": 0.5,
+    "max_depth": 24,
+    "class_weight": null
+  },
+  "threshold": 0.34875,
+  "threshold_source": "maximises F2 on out-of-fold training scores (8000 rows, 271 failures)",
+  "score_interpretation": "Model score in [0, 1]; a row is flagged when score >= threshold. The score is the ensemble's averaged vote, not a calibrated probability (see the reliability figure).",
+  "inputs": [
+    "type",
+    "air_temp_k",
+    "process_temp_k",
+    "rotational_speed_rpm",
+    "torque_nm",
+    "tool_wear_min"
+  ],
+  "engineered_features": [
+    "temp_diff_k",
+    "power_w",
+    "strain_min_nm"
+  ],
+  "model_input_names": [
+    "air_temp_k",
+    "process_temp_k",
+    "rotational_speed_rpm",
+    "torque_nm",
+    "tool_wear_min",
+    "temp_diff_k",
+    "power_w",
+    "strain_min_nm",
+    "type_H",
+    "type_L",
+    "type_M"
+  ],
+  "excluded_columns_leakage_guard": [
+    "machine_failure",
+    "twf",
+    "hdf",
+    "pwf",
+    "osf",
+    "rnf",
+    "udi",
+    "product_id"
+  ],
+  "training_ranges": {
+    "air_temp_k": [
+      295.3,
+      304.5
+    ],
+    "process_temp_k": [
+      305.7,
+      313.8
+    ],
+    "rotational_speed_rpm": [
+      1168.0,
+      2886.0
+    ],
+    "torque_nm": [
+      3.8,
+      76.6
+    ],
+    "tool_wear_min": [
+      0.0,
+      253.0
+    ]
+  },
+  "training_medians": {
+    "air_temp_k": 300.1,
+    "process_temp_k": 310.1,
+    "rotational_speed_rpm": 1503.0,
+    "torque_nm": 40.1,
+    "tool_wear_min": 107.0,
+    "type": "L"
+  },
+  "holdout_metrics": {
+    "threshold": 0.34875,
+    "n": 2000,
+    "n_failures": 68,
+    "tn": 1929,
+    "fp": 3,
+    "fn": 12,
+    "tp": 56,
+    "accuracy": 0.9925,
+    "balanced_accuracy": 0.910988308366825,
+    "precision": 0.9491525423728814,
+    "recall": 0.8235294117647058,
+    "specificity": 0.9984472049689441,
+    "f1": 0.8818897637795277,
+    "f2": 0.8459214501510572,
+    "mcc": 0.8803973100652793,
+    "false_alarm_rate": 0.0015527950310559005,
+    "alert_rate": 0.0295,
+    "roc_auc": 0.9803198453294363,
+    "pr_auc": 0.8906560005988127,
+    "brier": 0.007448944965277779
+  },
+  "holdout_metrics_ci95": {
+    "precision": [
+      0.890625,
+      1.0
+    ],
+    "recall": [
+      0.7349264705882357,
+      0.9117647058823529
+    ],
+    "f1": [
+      0.8159389830508474,
+      0.9375
+    ],
+    "pr_auc": [
+      0.822462557879518,
+      0.9495446619495026
+    ],
+    "roc_auc": [
+      0.9565874855376933,
+      0.9955738681342102
+    ]
+  },
+  "metadata": {
+    "created_utc": "2026-10-21T18:22:46+00:00",
+    "seed": 42,
+    "search": true,
+    "search_iterations": 24,
+    "cv_folds": 5,
+    "test_size": 0.2,
+    "data_file": "ai4i2020.csv",
+    "data_sha256": "59db4f1d9c34c58136d89e5a006ec190dcea19e9dbea74f6b3b0c6f22a44d183",
+    "n_rows": 10000,
+    "n_train": 8000,
+    "n_test": 2000,
+    "failures_train": 271,
+    "failures_test": 68,
+    "environment": {
+      "python": "3.13.16",
+      "platform": "Linux-6.18.44-fc-v140-x86_64-with-glibc2.39",
+      "scikit_learn": "1.9.1",
+      "pandas": "3.0.5",
+      "numpy": "2.5.3",
+      "joblib": "1.6.0",
+      "project_version": "1.0.0"
+    }
+  }
+}
