@@ -162,9 +162,9 @@ stored outputs come from executing its cells in order with plain Python; it has 
 The dashboard is deployed on Streamlit Community Cloud:
 **https://machine-failure-prediction-ai4i.streamlit.app**
 
-It runs the committed model and reports as they are. The app started on Python 3.13 with the scikit-learn
-version pinned in `requirements.txt`; if a future platform update changes that, the app retrains a quick
-model on start (see *How it works*). Screenshots of the running app are in `screenshots/` once added.
+It runs the committed model and reports as they are. The app was deployed with Python 3.13 and the
+latest versions that `requirements.txt` allows. If the installed scikit-learn differs from the one that
+trained the model, the app retrains a quick model on start (see *How it works*).
 
 ## Limitations
 
